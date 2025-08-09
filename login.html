@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login detail</title>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form container */
+form {
+  background: white;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 30px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+/* Input fields & select */
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Spacing for each field */
+div {
+  margin-bottom: 15px;
+}
+
+</style>
+</head>
+<body>
+    <h1 align="center">login details</h1>
+    <form action="/submit.php" align="center">
+        <div>
+            <label for="Name">Name</label>
+            <input id="Name" type="text"required >
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input id="Email" type="email">
+        </div>
+        <div>
+            <label for="contact">contact no</label>
+            <input id="contact" type="tel">
+        </div>
+        <div>
+        <label for="password">password</label>
+        <input id="password" type="password" required>
+        </div>
+        <div>
+            <label for="password">confirm password</label>
+        <input id="password" type="password">
+        </div>
+        <div>
+            <label for="Gender">Gender</label>
+            <select id="Gender">
+                <option value="select gender"disabled selected>select gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="trans">trans</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">submit</button>
+        </div>
+
+    </form>
+    
+</body>
+</html>
